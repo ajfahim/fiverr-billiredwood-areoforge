@@ -5,7 +5,7 @@ const router = express.Router();
 
 const moduleRoutes = [
   {
-    path: '/mailing_list',
+    path: '/mailing-list',
     route: MailingListRoutes,
   },
 ];

@@ -1,5 +1,6 @@
 // index.js
 import bodyParser from 'body-parser';
+import cors from 'cors';
 import dotenv from 'dotenv';
 import express from 'express';
 import globalErrorHandler from './src/middlewares/globalErrorHandler.js';
@@ -10,7 +11,7 @@ dotenv.config();
 
 // Initialize Express app
 const app = express();
-
+app.use(cors());
 // Middleware
 app.use(bodyParser.json()); // For parsing application/json
 
